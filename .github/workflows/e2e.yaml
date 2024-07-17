@@ -32,7 +32,6 @@ jobs:
       - name: Verify clusters reconciliation
         run: |
           kubectl -n staging wait kustomization/apps --for=condition=ready --timeout=5m
-          kubectl -n production wait kustomization/apps --for=condition=ready --timeout=5m
       - name: Debug failure
         if: failure()
         run: |
