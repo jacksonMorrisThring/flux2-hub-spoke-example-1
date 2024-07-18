@@ -5,3 +5,4 @@ resources:
   - cert-manager.yaml
   - ingress-nginx.yaml
   - podinfo.yaml
+  - tf-controller.yaml
